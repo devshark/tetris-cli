@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  tetris:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tetris-game
+    tty: true  # Allocate a pseudo-TTY
+    stdin_open: true  # Keep STDIN open even if not attached
